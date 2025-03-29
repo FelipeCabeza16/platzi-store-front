@@ -33,7 +33,7 @@
         <div
           class="absolute -top-2 -left-2 rounded h-5 w-5 bg-black text-white text-xs"
         >
-          {{ cart.length }}
+          {{ cart().length }}
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@
   <div class="pt-4 flex flex-col space-y-4">
     <div
       class="flex justify-between items-center p-4 bg-gray-100 rounded-lg shadow-md"
-      *ngFor="let product of cart"
+      *ngFor="let product of cart()"
     >
       <div class="flex items-center space-x-4">
         <img
